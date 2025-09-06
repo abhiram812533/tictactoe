@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Advanced Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <h1>Tic Tac Toe game</h1>
+
+  <div id="choice-screen">
+
+    <button onclick="startGame('square')">Square Game</button>
+
+    <button onclick="startGame('circle')">Circle Game</button>
+
+  </div>
+
+  <div id="game-screen" class="hidden">
+
+    <div class="game-container" id="gameContainer">
+
+      <p class="turn" id="turnDisplay">X's Turn</p>
+
+      <div class="board" id="board"></div>
+
+      <button onclick="resetGame()">Reset</button>
+
+      <div class="winner" id="winnerDisplay"></div>
+
+      <button class="back-btn" onclick="goBack()">Back</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
